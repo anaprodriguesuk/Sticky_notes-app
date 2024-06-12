@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Note</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'sticky_notes/styles.css' %}">
+</head>
+<body>
+    <h1>Delete Note</h1>
+    <p>Are you sure you want to delete the note "{{ note.title }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirm Delete</button>
+    </form>
+    <a href="{% url 'read_note' note_id=note.id %}">Cancel</a>
+</body>
+</html>
+

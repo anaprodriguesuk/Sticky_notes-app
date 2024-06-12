@@ -1,0 +1,18 @@
+<!-- sticky_notes/templates/sticky_notes/view_notes.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Note</title>
+</head>
+<body>
+    <h1>{{ note.title }}</h1>
+    <p>{{ note.content }}</p>
+    <p>Created on: {{ note.date_created }}</p>
+    <p>Last updated: {{ note.date_updated }}</p>
+    <a href="{% url 'update_note' note.id %}">Edit</a>
+    <a href="{% url 'delete_note' note.id %}">Delete</a>
+    <a href="{% url 'list_notes' %}">Back to list</a>
+</body>
+</html>
+
+

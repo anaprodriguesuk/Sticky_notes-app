@@ -1,0 +1,76 @@
+/* sticky_notes/static/sticky_notes/styles.css */
+
+/* Style for list_notes.html */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for view_note.html */
+.note-details {
+    margin-bottom: 20px;
+}
+
+.note-details h2 {
+    color: #333;
+}
+
+.note-details p {
+    color: #666;
+}
+
+.note-details a {
+    margin-right: 10px;
+}
+
+/* Style for create_note.html and update_note.html */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for delete_note.html */
+.delete-message {
+    margin-bottom: 20px;
+    color: #ff0000;
+}
