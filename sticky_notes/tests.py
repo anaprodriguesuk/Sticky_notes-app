@@ -1,6 +1,6 @@
 from django.test import TestCase  # type: ignore
 from django.urls import reverse  # type: ignore
-from .models import StickyNotes
+from sticky_notes.models import StickyNotes
 
 
 class StickyNotesTests(TestCase):

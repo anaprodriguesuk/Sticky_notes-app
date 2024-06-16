@@ -3,6 +3,9 @@
 <html>
 <head>
     <title>View Note</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'sticky/styles.css' %}">
+
 </head>
 <body>
     <h1>{{ note.title }}</h1>

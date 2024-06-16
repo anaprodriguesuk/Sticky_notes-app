@@ -1,6 +1,7 @@
 from django.urls import path # type: ignore
 from . import views
 
+
 urlpatterns = [
     # URL pattern for listing all notes
     path('', views.list_notes, name='list_notes'),
@@ -12,4 +13,5 @@ urlpatterns = [
     path('note/<int:note_id>/update/', views.update_note, name='update_note'),
     # URL pattern for deleting a specific note
     path('note/<int:note_id>/delete/', views.delete_note, name='delete_note'),
+   
 ]
